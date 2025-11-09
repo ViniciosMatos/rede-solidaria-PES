@@ -13,45 +13,51 @@
 
 <body class="container">
     <div class="fundo-header blue-bg">
-        <div>
-            <div class="sobrepor gap-20">
-                <header>
-                    <div>
-                        <h1>Emergências</h1>
-                        <h3>Ajude onde é mais necessário</h3>
+        <div class="sobrepor conteudo-main gap-20">
+            <header>
+                <div>
+                    <h1>Emergências</h1>
+                    <h3>Ajude onde é mais necessário</h3>
+                </div>
+
+                <i class="fa-regular fa-user"></i>
+            </header>
+
+            <section class="filters">
+                <input type="text" name="search-emergency" id="search" placeholder="Buscar emergências...">
+            </section>
+
+            <main class="gap-20">
+                <section class="map-donate gap-20">
+                    <div class="map gap-20">
+                        <i class="fa-solid fa-location blue-bg"></i>
+                        <div>
+                            <h4>Ver mapa</h4>
+                            <p>Pontos de coleta</p>
+                        </div>
                     </div>
-
-                    <i class="fa-regular fa-user"></i>
-                </header>
-
-                <section class="filters">
-                    <input type="text" name="search-emergency" id="search" placeholder="Buscar emergências...">
+                    <div class="my-donates gap-20">
+                        <i class="fa-solid fa-heart orange-bg"></i>
+                        <div>
+                            <h4>Minhas doações</h4>
+                            <p>Histórico</p>
+                        </div>
+                    </div>
                 </section>
 
-                <main class="gap-20">
-                    <section class="map-donate gap-20">
-                        <div class="map gap-20">
-                            <i class="fa-solid fa-location blue-bg"></i>
-                            <div>
-                                <h4>Ver mapa</h4>
-                                <p>Pontos de coleta</p>
-                            </div>
+                <section class="emergencias gap-20">
+                    <h2>Emergências Ativas</h2>
+                    
+                    <div class="cards"  >
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/250px-Gremio_logo.svg.png"
+                            alt="oi">
+                        <div class="sobrepor urgente">
+                            <p>Urgente</p>
                         </div>
-                        <div class="my-donates gap-20">
-                            <i class="fa-solid fa-heart orange-bg"></i>
-                            <div>
-                                <h4>Minhas doações</h4>
-                                <p>Histórico</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="emergencias gap-20">
-                        <h2>Emergências Ativas</h2>
-
-                        <div class="cards">
+                        <div class="info-cards  gap-20">
                             <h3>Enchentes no Rio Grande do Sul</h3>
-                            <div class="info-cards">
+
+                            <div class="date-time">
                                 <i class="fa-solid fa-location">
                                     Porto Alegre, RS
                                 </i>
@@ -63,15 +69,51 @@
                                 <h4>Meta de Doações</h4>
                                 <h4>68%</h4>
                             </div>
+                            
+                            <!-- fazer um botão -->
                         </div>
-                        <div class="cards">
-                            <h3>Abrigo para Familias Desabrigadas</h3>
-                            <div class="info-cards">
+                    </div>
+
+
+                    <div class="cards">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/250px-Gremio_logo.svg.png"
+                            alt="oi">
+                        <div class="sobrepor urgente">
+                            <p>Urgente</p>
+                        </div>
+                        <div class="info-cards  gap-20">
+                            <h3>Incêndio em Comunidade</h3>
+
+                            <div class="date-time">
                                 <i class="fa-solid fa-location">
-                                    Petrópolis, RJ
+                                    MANAUS, AM
                                 </i>
                                 <i class="fa-solid fa-clock">
-                                    5h atrás
+                                    30 MIN ATRÁS
+                                </i>
+                            </div>
+                            <div class="meta-doacoes">
+                                <h4>Meta de Doações</h4>
+                                <h4>15%</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/250px-Gremio_logo.svg.png"
+                            alt="oi">
+                        <div class="sobrepor moderado">
+                            <p>Moderado</p>
+                        </div>
+                        <div class="info-cards  gap-20">
+                            <h3>Abrigo para Famílias Desabrigadas</h3>
+
+                            <div class="date-time">
+                                <i class="fa-solid fa-location">
+                                    PETRÓPOLIS, RJ
+                                </i>
+                                <i class="fa-solid fa-clock">
+                                    5H ATRÁS
                                 </i>
                             </div>
                             <div class="meta-doacoes">
@@ -79,12 +121,37 @@
                                 <h4>45%</h4>
                             </div>
                         </div>
-                    </section>
+                    </div>
+
+                    <div class="cards">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/250px-Gremio_logo.svg.png"
+                            alt="oi">
+                        <div class="sobrepor baixa">
+                            <p>Baixa</p>
+                        </div>
+                        <div class="info-cards  gap-20">
+                            <h3>Campanha Agasalho Inverno</h3>
+
+                            <div class="date-time">
+                                <i class="fa-solid fa-location">
+                                    SÃO PAULO, SP
+                                </i>
+                                <i class="fa-solid fa-clock">
+                                    1 DIA ATRÁS
+                                </i>
+                            </div>
+                            <div class="meta-doacoes">
+                                <h4>Meta de Doações</h4>
+                                <h4>82%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 
-                </main>
+            </main>
 
-            </div>
+        </div>
 </body>
 
 </html

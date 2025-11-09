@@ -7,11 +7,9 @@
 
 .blue-bg {
     background-color: #0a2647;
-
 }
 
 .orange-bg {
-
     background-color: #FF6B35;
 }
 
@@ -116,14 +114,17 @@ body {
     z-index: 1;
 }
 
-
 .sobrepor {
+
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 2;
+}
+
+.conteudo-main {
     padding: 5vh;
     width: 100%;
-    z-index: 2;
 
     & header {
         display: flex;
@@ -173,23 +174,77 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
 
-        & h2{
+        & h2 {
             width: 100%;
         }
 
+        & a{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
         & .cards {
+            position: relative;
             display: flex;
             flex-direction: column;
-            gap: 5%;
             width: 48%;
             height: 30vmax;
-            border: 1px solid;
-            
-            & .info-cards, .meta-doacoes{
+            border: 1px solid lightgray;
+            border-radius: 20px;
+
+            & img {
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            & .urgente,
+            .moderado,
+            .baixa {
+                margin: 10px;
+                padding: 5px;
+                right: 0;
+                top: 0;
+                border-radius: 10px;
+                color: white;
+                background-color: rgb(29, 137, 238);
+            }
+
+            & .urgente {
+                background-color: red;
+            }
+
+            & .moderado {
+                background-color: #FF6B35;
+            }
+
+
+
+            & .info-cards {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                color: gray;
+                padding: 5%;
+
+                & h3 {
+                    color: black;
+                }
+
+            }
+
+            & .date-time,
+            .meta-doacoes {
                 display: flex;
                 gap: 10%;
             }
-            & .meta-doacoes{
+
+            & .meta-doacoes {
                 justify-content: space-between;
             }
         }
